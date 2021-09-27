@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html tutorial</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+    <style>
+        #playlist{
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid blue; */
+            /* border: none;
+            box-shadow: 2px 2px 2px 4px blue;
+            border-radius: 20px; */
+        }
+        #oneshot{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid blue;
+            border: none;
+            margin-top: 140px;
+            margin-right:80px;
+            /* box-shadow: 2px 2px 2px 4px blue;     */
+            border-radius: 20px;
+        }
+        .video{
+            margin-left: 50px;
+            border-radius: 20px;
+            box-shadow: 2px 3px 2px 2px blue;
+            margin:20px 50px 20px 25px;
+        }
+        .oneshot{
+            /* margin-left: 20px; */
+            border-radius: 20px;
+            box-shadow: 2px 3px 2px 2px blue;
+            margin:50px 40px 20px 10px;
+        }
+        .demo{
+            display: flex;
+            margin-top: 80px;
+
+        }
+        .video,.oneshot,.theory div{
+            display:none;
+        }
+        .navvar{
+            display: flex;
+            /* align-items: center; */
+            justify-content:center;
+            position: fixed;
+            margin-left: 390px;
+            
+        }
+        .navvar a{
+            margin-left: 72px;
+            border: 8px solid blue;
+            text-decoration: none;
+            background-color: blue;
+            color: white;
+             
+        }
+        p{
+            font-size: 30px;
+            margin-right: 22px;
+        }
+        .explain{
+            width: 300px;
+            margin-top: 70px;
+            margin-left:300px
+        }
+        img{
+            margin-left: 22px;
+        }
+        .theory a{
+            border: 8px solid blue;
+            text-decoration: none;
+            background-color: blue;
+            color: white;
+        }
+        .theory div{
+            width: 230px;
+            border-radius: 20px;
+            box-shadow: 2px 3px 2px 2px blue;
+            height: 200px;
+            /* align-items: center; */
+            padding-top:50px;
+            margin-left: 30px;
+        }
+        .theory{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>
+    HTML TUTORIAL
+    </h1>
+
+    <div class="navvar">
+        <div>
+            <a id="play" href="#playlist">PLAYLIST</a>
+        </div>
+        <div>
+            <a  id="one" href="#oneshot">ONESHOT</a>
+        </div>
+        <div>
+            <a  id="theo"href="#theory">THEORY</a>
+        </div>
+    </div>
+    <div class="demo">
+        <div class="explain">
+           <p>HTML is the universal markup language for the Web. ... HTML lets you format text, add graphics, create links, input forms, frames and tables, etc., and save it all in a text file that any browser can read and display.</p>
+        </div>
+        <div class="image">
+            <img width="400px" height="500px"src="img/html.png">
+        </div>
+    </div>
+    </center>
+    <div class="div">
+        <div class="playlist" id="playlist">
+            <div>
+           <embed  class="video" style="width: 200px; height:200px;" src="https://www.youtube.com/embed/luAkR9VaLcw">
+            </div>
+            <div>
+                <embed class="video" style="width: 180px; height: 200px;" src="https://www.youtube.com/embed/dD2EISBDjWM">
+            </div>
+            <div>
+              <embed class="video" style="width: 200px; height:200px;" src="https://www.youtube.com/embed/Mp0f0zTPLec">
+            </div>
+            <div>
+                <embed class="video" style="width: 200px; height: 200px; "src= "https://www.youtube.com/embed/Y1BlT4_c_SU">
+            </div>
+            <div>
+                <embed class="video" style="width: 200px; height: 200px;" src="https://www.youtube.com/embed/GpcMasRWUhI">
+            </div>
+        </div>
+        <div class="oneshots" id="oneshot">
+              <div> 
+                  <embed class="oneshot" style="width: 200px; height: 200px;" src="https://www.youtube.com/embed/BsDoLVMnmZs">
+              </div>
+              <div style="width: 330px;">
+                  <embed class="oneshot" id="onshotvideo2" style="width:200opx; height: 200px;" src="https://www.youtube.com/embed/pQN-pnXPaVg">
+              </div>
+              <div>
+                  <embed  class="oneshot" style="width:200px; height: 200px" src="https://www.youtube.com/embed/E3ByCRqE7Lo"> 
+              </div>
+              <div>
+                  <embed class="oneshot" style="width: 200px; height: 200px;" src="https://www.youtube.com/embed/m3wYoxMa-kc">
+              </div>
+              <div>
+                  <embed class="oneshot" style="width: 200px; height: 200px;" src="https://www.youtube.com/embed/qz0aGYrrlhU">
+              </div>
+        </div>
+        <div class="theory" id="theory">
+              
+                    <div>
+                        <center>
+                       <h2>
+                           Coursera
+                           </h2>
+                           <a href="https://www.coursera.org/learn/html">Access</a>
+                        </center>
+                    </div>
+                    <div>
+                        <center>
+                         <h2>
+                             Udemy
+                         </h2>
+                         <a href="https://www.udemy.com/course/learn-html5-programming-from-scratch/">Acess</a>
+                  </center>
+                        </div>
+                    <div>
+                        <center>
+                         <h2>
+                             W3school
+                         </h2>
+                         <a href="https://www.w3schools.com/html/">Read</a>
+                        </center>
+                    </div>
+                    <div>
+                        <center>
+                    <h2>
+                        Tutorialspoint
+                        </h2>
+                          <a href="https://www.tutorialspoint.com/html/index.htm">Read</a>
+                          </center>
+                     </div>
+                          <div>
+                              <center>
+                       <h2>
+                           Javatpoint
+                       </h2>
+                       <a href="https://www.javatpoint.com/html-tutorial">Read</a>
+                       </center>
+                    </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+        $("a").click(function(){
+            $(".video").css("display","block");
+        $(".oneshot").css("display","none");
+        $(".theory div").css("display","none");
+    });
+    $("#one").click(function(){
+        $(".video").css("display","none");
+        $(".oneshot").css("display","block");
+        $(".theory div").css("display","none");
+    });
+    $("#theo").click(function(){
+        $(".video").css("display","none");
+        $(".oneshot").css("display","none");
+        $(".theory div").css("display","block");
+    });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+header h1 {
+    color: rgba(51, 103, 247, 0.884);
+    font-size: 1.4rem; 
+   
+       
+}
+header h1 span{
+    color: rgba(51, 103, 247, 0.884);
+}
+
+header{
+     background-color: white; 
+    padding: 5px; 
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    position: sticky; 
+    top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: white;
+z-index: -1;
+opacity: 0.7;
+top: 0px;
+left: 0px;
+}
+ .logo img{
+    
+    width: 55px;
+    height: 55px;
+    /* filter: invert(100%); */
+}
+nav{
+    display: flex;
+}
+.navigation{
+    position: absolute;
+    right: 50px;
+    top: 16px;
+}
+ button{
+    padding: 5px;
+   background-color:rgba(51, 103, 247, 0.884);
+   color: white;
+  border: 2px solid rgba(51, 103, 247, 0.884);
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.search{
+padding-left: 40px;
+}
+.search input{
+  /* border: 2px solid black; */
+  padding: 10px;
+  color: black;
+  /* border-radius: 8%; */
+}
+/* .search input placeholder{
+  padding: 2px; */
+
+
+.search i{
+  font-size: 20px;
+  color: white;
+  background-color: rgba(51, 103, 247, 0.884);
+  padding: 9px 8px 14px 10px;
+}
+.header
+.background img{
+ object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.Home::before{
+content: "";
+
+background: url(img/background0.jpg) no-repeat center center/cover;
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+top: 0px;
+left: 0px;
+opacity: 0.9;
+}
+.background{
+margin: 16px;
+padding: 38px;
+}
+
+.background h1{
+    color: rgba(51, 103, 247, 0.884);
+  font-size: 3rem;
+  padding: 14px;
+}
+.background p{
+  color: black;
+  font-size: 1.5rem; 
+   padding: 13px;
+}
+.background button{
+  margin: 22px;
+  padding:11px;
+}
+.About {
+padding: 32px;
+/* margin-top: 90px; */
+
+}
+.About h1{
+  text-align: center;
+  font-size: 2rem;
+}
+.About h1 span{
+    color: rgba(51, 103, 247, 0.884);  
+font-size: 2rem;
+}
+.About p{
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+.About .boxes{
+    display: flex;
+    margin: 58px;
+    text-align: center;
+
+
+}
+.box1 img{
+    width: 106px;
+    height: 102px;
+    border-radius: 50%;
+    
+}
+.box1 div{
+    font-size: 1.5rem;
+    color: rgba(51, 103, 247, 0.884);
+    font-weight: 600;
+    padding: 2px;
+}
+.box1{
+  background-color: #e8e8e8;
+  padding: 25px;
+  margin: 10px;
+  /* border: 2px solid blue ; */
+  border-color: rgba(51, 103, 247, 0.884);
+}
+.box1 p{
+  font-size: 1.1rem;
+}
+.box2{
+  background-color: #e8e8e8;
+  padding: 25px;
+  margin: 10px;
+}
+.box2 img{
+    width: 106px;
+    height: 102px;
+
+}
+.box2 div{
+    font-size: 1.5rem;
+    color: rgba(51, 103, 247, 0.884);
+    font-weight: 600;
+    padding: 2px;
+}
+.box2 p{
+  font-size: 1.1rem;
+}
+.box3{
+  background-color: #e8e8e8;
+  padding: 25px;
+  margin: 10px;
+}
+.box3 img{
+    width: 106px;
+    height: 102px;
+
+}
+.box3 div{
+    font-size: 1.5rem;
+    color: rgba(51, 103, 247, 0.884);
+    font-weight: 600;
+    padding: 2px;
+}
+.box3 p{
+  font-size: 1.1rem;
+}
+
+.About .boxes1{
+  display: flex;
+  margin: 58px;
+  text-align: center;
+
+
+}
+.box4 img{
+  width: 106px;
+  height: 102px;
+  /* border-radius: 50%; */
+  
+}
+.box4 div{
+  font-size: 1.5rem;
+  color: rgba(51, 103, 247, 0.884);
+  font-weight: 600;
+  padding: 2px;
+}
+.box4{
+background-color: #e8e8e8;
+padding: 25px;
+margin: 10px;
+/* border: 2px solid blue ; */
+border-color: rgba(51, 103, 247, 0.884);
+}
+.box4 p{
+font-size: 1.1rem;
+}
+.box5{
+background-color: #e8e8e8;
+padding: 25px;
+margin: 10px;
+}
+.box5 img{
+  width: 106px;
+  height: 102px;
+
+}
+.box5 div{
+  font-size: 1.5rem;
+  color: rgba(51, 103, 247, 0.884);
+  font-weight: 600;
+  padding: 2px;
+}
+.box5 p{
+font-size: 1.1rem;
+}
+.box6{
+background-color: #e8e8e8;
+padding: 25px;
+margin: 10px;
+}
+.box6 img{
+  width: 106px;
+  height: 102px;
+  border-radius: 50%;
+
+}
+.box6 div{
+  font-size: 1.5rem;
+  color: rgba(51, 103, 247, 0.884);
+  font-weight: 600;
+  padding: 2px;
+}
+.box6 p{
+font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+

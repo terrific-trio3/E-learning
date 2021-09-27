@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Development</title>
+    <!-- Linking Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "San Francisco", arial, sans-serif;
+  }
+  
+  main {
+    flex: 100%;
+    background-color: white;
+  }
+  
+  section:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+  
+  section {
+    text-align: center;
+    height: 100%;
+    padding: 75px 0px;
+    min-height: 40vh;
+  }
+  
+  section h2 {
+    margin-bottom: 50px;
+  }
+  
+  section h2 span {
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: #fff;
+    background: #120f5e;
+    background: rgba(51, 103, 247, 0.884);
+  }
+  
+  .carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    counter-increment: carousel-cell;
+  }
+  
+  .iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; 
+  }
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .study_material img {
+    margin: 5px;
+    box-shadow: 8px 8px 12px 2px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 50%;
+  }
+  
+  .study_material img:hover {
+    border: 5px solid grey;
+    border-radius: 5px;
+  }
+
+  .img-responsive {
+    max-width: 100vh;
+    height: 100vh;
+  }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Android Development</a>
+    </nav>
+    
+    <main>
+        <section class="study_material">
+            <h2><span>Notes</span></h2>
+            <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <a target="_blank" href="notes/android1.pdf"><img
+                            class="img-responsive"
+                            src="notes img/android1.png"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a target="_blank"
+                        href="notes/android2.pdf"><img
+                            class="img-responsive"
+                            src="notes img/android2.png" alt=""></a>
+                </div>
+                <div class="carousel-cell">
+                    <a target="_blank" href="notes/android3.pdf"><img
+                            class="img-responsive"
+                            src="notes img/android3.png"></a>
+                </div>
+                </section>
+                <section>
+                    <h2><span>Videos</span></h2>
+                    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                    <div class="carousel-cell"><iframe width="560" height="315" src="https://www.youtube.com/embed/CU81-JGPbJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="carousel-cell"><iframe width="560" height="315" src="https://www.youtube.com/embed/z3rkAbvErbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="carousel-cell"><iframe width="560" height="315" src="https://www.youtube.com/embed/TEx-mB2luO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </section>
+        
+    </main>
+    <!-- Flickity JS files -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

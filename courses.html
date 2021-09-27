@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>E-learning</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Bree Serif', serif;
+      }
+
+      span {
+        color: rgba(51, 103, 247, 0.884);
+      }
+
+      #courses {
+        margin: 34px;
+        display: flex;
+      }
+
+      #courses .box {
+        border: 2px solid #a3fff6;
+        padding: 34px;
+        margin: 2px 55px;
+        border-radius: 28px;
+        background: #d5f5f2;
+        margin-bottom: 20px;
+        height: 400px;
+        width: 300px;
+      }
+
+      #courses .box img {
+        height: 160px;
+        margin: auto;
+        display: block;
+        border-radius: 28px;
+      }
+
+      #contact {
+        background-image: url("img/contact.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 30px;
+      }
+
+      #contact h1 {
+        color: rgba(51, 103, 247, 0.884);
+      }
+
+      .contact-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-info {
+        color: #000;
+        max-width: 500px;
+        line-height: 65px;
+        padding-left: 50px;
+        font-size: 18px;
+      }
+
+      .contact-info i {
+        margin-right: 20px;
+        font-size: 25px;
+      }
+
+      .contact-form {
+        max-width: 700px;
+        margin-right: 50px;
+      }
+
+      .contact-info,
+      .contact-form {
+        flex: 1;
+      }
+
+      .contact-form .text-box {
+        background: rgb(255, 252, 252);
+        color: #fff;
+        border: none;
+        width: calc(50% - 10px);
+        height: 50px;
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        opacity: 0.9;
+      }
+
+      .contact-form .text-box:first-child {
+        margin-right: 15px;
+      }
+
+      .contact-form textarea {
+        background: rgb(255, 255, 255);
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+        min-height: 200px;
+        max-height: 400px;
+        resize: vertical;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        opacity: 0.9;
+      }
+      
+      .footer {
+        padding: 40px 0;
+        background-color: #fff;
+      }
+
+      .footer .social {
+        text-align: center;
+        padding: 25px;
+        color: #000;
+      }
+
+      .footer .social a {
+        font-size: 24px;
+        color: inherit;
+        border: 1px solid #000;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0.8px;
+        opacity: 0.75;
+      }
+
+      .footer .social a:hover {
+        opacity: 0.9;
+      }
+
+      .footer ul {
+        margin-top: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+      .footer ul li a {
+        color: #000;
+        text-decoration: none;
+        opacity: 0.8;
+      }
+
+      .footer ul li{
+        display: inline-block;
+        padding: 0 15px;
+      }
+
+      .footer ul li a:hover {
+        opacity: 1;
+      }
+
+      .footer .copyright {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 16px;
+        color: #000;
+      }
+
+      .h-primary {
+        font-size: 3.8rem;
+        padding: 12px;
+      }
+
+      .h-secondary {
+        font-size: 2.3rem;
+        padding: 12px;
+      }
+
+      .btn {
+        padding: 6px 20px;
+        border: 2px solid blue;
+        background-color: blue;
+        color: white;
+        margin: 17px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        padding: 6px 20px;
+        border: 2px solid darkblue;
+        background-color: darkblue;
+        color: white;
+        margin: 17px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .center {
+        text-align: center;
+      }
+    </style>
+    <section>
+      <h1 class="h-primary center">Our <span>Curriculum</span></h1>
+      <div id="courses">
+        <div class="box">
+          <img src="img/1.png" alt="" />
+          <h2 class="h-secondary center">Web Development</h2>
+          <p class="center">Course Provider : University of Michigan</p>
+          <button class="btn" id="btn1">Course Material</button>
+        </div>
+        <div class="box">
+          <img src="img/2.png" alt="" />
+          <h2 class="h-secondary center">Python Analytics</h2>
+          <p class="center">Course Provider : The Imperial College</p>
+          <button class="btn" id="btn2">Course Material</button>
+        </div>
+        <div class="box">
+          <img src="img/3.png" alt="" />
+          <h2 class="h-secondary center">Android Development</h2>
+          <p class="center">Course Provider : Vanderbuilt University</p>
+          <button class="btn" id="btn3">Course Material</button>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="h-primary center">Contact Us</h1>
+      <div class="contact-section">
+        <div class="contact-info">
+          <div><i class="fas fa-map-marker-alt"></i>E-learning</div>
+          <div><i class="fas fa-envelope"></i>elearning@email.com</div>
+          <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
+        </div>
+        <div class="contact-form">
+          <form class="contact" action="" method="post">
+            <input type="text" name="name" class="text-box" placeholder="Your Name" required/>
+            <input type="email" name="email" class="text-box" placeholder="Your Email" required/>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+
+      <ul class="list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">F.A.Q.</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+      <p class="copyright">Copyright &copy E-learning. All rights reserved.</p>
+    </section>
+    <script>
+       document.getElementById("btn1").onclick = function () {
+         location.href = "index1.html";
+       };
+
+      document.getElementById("btn2").onclick = function () {
+        location.href = "course material/index2.html";
+      };
+
+      document.getElementById("btn3").onclick = function () {
+        location.href = "course material/index3.html";
+      };
+    </script>
+  </body>
+</html>
